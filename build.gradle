@@ -1,0 +1,20 @@
+plugins {
+	id 'java'
+	id 'eclipse'
+	id 'application'
+}
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+}
+
+mainClassName = "emptypassage.Application"
+
+dependencies {
+    implementation 'com.google.guava:guava:21.0'
+    testImplementation 'junit:junit:4.12'
+    compile("org.springframework.boot:spring-boot-starter-web:1.5.6.RELEASE")
+    compile 'org.springframework:spring-context:4.3.11.RELEASE'
+}
+
